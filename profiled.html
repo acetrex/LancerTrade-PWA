@@ -1,0 +1,90 @@
+<div class="views">
+  <div class="view view-main">
+    <div class = "navbar">
+      <div class = "navbar-inner">
+        <div class = "left">Left</div>
+        <div class = "center">Center</div>
+        <div class = "right">
+        </div>
+      </div>
+    </div>
+    <div class="pages navbar-through toolbar-fixed">
+      <div class ="page" data-page="profileb">
+        <div class="page-content">
+          <form id="my-form" class="list-block">
+            <ul>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon f7-icons">box</i></div>
+                  <div class="item-inner">
+                    <div class="item-title label">Project</div>
+                    <div class="item-input">
+                      <input type="text" placeholder="Your Project" id="propTitle">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon f7-icons">timer</i></div>
+                  <div class="item-inner">
+                    <div class="item-title label">Duration</div>
+                    <div class="item-input">
+                      <input type="email" placeholder="Duration" id="propDuration">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon f7-icons">money_dollar</i></div>
+                  <div class="item-inner">
+                    <div class="item-title label">Pay</div>
+                    <div class="item-input">
+                      <input type="email" placeholder="Payment" id="propPay">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item-content">
+                  <div class="item-media"><i class="icon f7-icons">check</i></div>
+                  <div class="item-inner">
+                    <div class="item-title label" style="overflow:visible;">Negotiable?</div>
+                    <div class="item-input">
+                      <label class="label-switch">
+                        <input type="checkbox" id="propNeg">
+                        <div class="checkbox"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="align-top">
+                <div class="item-content">
+                  <div class="item-media"><i class="icon f7-icons">info</i></div>
+                  <div class="item-inner">
+                    <div class="item-title label" style="overflow:visible;">Description<br></div>
+                    <div class="item-input">
+                      <textarea class="resizable" style="margin-left:3vw;" id="propDesc"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </form>
+          <div id="sendPropX" class="connectButton" style="min-height:10vh;margin-top:1vh;" onclick="sendPropFile()">
+            <div id="proptext1" class="item-media"><i class="icon f7-icons">collection_fill</i>
+              &nbsp;Request Contact
+            </div>
+          </div>
+          <div class="button" id="sendConnect" onclick="sendConnectR()" style="min-height:10vh;margin-top:1vh;">
+            <div class="item-media"><i class="icon f7-icons">add_round_fill</i>
+              &nbsp;Request Contact
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

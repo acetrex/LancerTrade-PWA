@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/acss2.css">
+</head>
+<body>
+    <script type="text/javascript" src="js/codea.js"></script>
+        <div class="pages">
+          <div class ="page" data-page="signup" style="background-color:white;">
+            <div class="page-content">
+            <center><span style="font-size:8vw;color:grey"> Create Account</span></center><br>
+            <div style="background-color:rgb(255,255,255,.20);z-index:-1;margin:1vw;border-radius:2vw;">
+              <form>
+              <div class="list-block">
+                <ul>
+                  <li class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Username</div>
+                      <div class="item-input">
+                        <input type="text" id="usernameSignUp" name="username" placeholder="Username">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Email</div>
+                      <div class="item-input">
+                        <input type="text" id="emailSignUp" name="password" placeholder="Email">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Password</div>
+                      <div class="item-input">
+                        <input type="password" id="passwordSignUp" name="password" placeholder="Password">
+                      </div>
+                    </div>
+                  </li>
+                  </ul>
+                </div>
+              </form>
+                <p style="font-size:5vw;padding-left:10vw;">I am a</p>
+                <center>
+                  <p style="padding-left:10vw;float:left;"></p>
+                  <button class="button" style="width:30vw;border:0px;height:10vw;font-size:5vw;float:left;" id="FreelanceSelect" onclick="freelanceSelection()">Freelancer</button>
+                  <button class="button" style="width:30vw;border:0px;height:10vw;font-size:5vw;" id="HirerSelect" onclick="hirerSelection()">Hirer</button>
+                </center>
+                </div>
+                <div class="list-block">
+                <ul>
+                    <li><a href="#" class="item-link list-button" onclick="signUp()">Sign Up</a></li>
+                </ul>
+                <br>
+                <div id="signUpErr" style="color:Red;text-align:center;">&nbsp;</div>
+
+            <!--</center>
+              <button class="button" style="width:90vw;border-radius:10vw;font-size:5vw;height:10vw;background-color:#2196f3;color:white">Sign Up</button>
+            </center> -->
+          </div>
+            </div>
+          </div>
+        </div>
+</body>
+</html>

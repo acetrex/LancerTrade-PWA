@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="res\drop.png" />
+  <title> LancerTrade</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/framework7.ios.min.css">
+  <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+  <link rel="stylesheet" href="framework7-icons-master\css\framework7-icons.css">
+
+  <link rel="stylesheet" href="css/my-app.css">
+  <link rel="stylesheet" href="css/acss1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <title>My App</title>
+</head>
+
+<body>
+  <div class = "panel-overlay"></div>
+
+  <div class = "panel panel-left panel-reveal">
+    <div class = "content-block" id="panelLeft">
+      <p></p>
+      <p><a href = "#">Open Right Panel</a></p>
+      <p><a href = "#" onclick="openLeftPanel()">Close me</a></p>
+    </div>
+  </div>
+
+  <div class="views">
+    <div class="view view-main">
+      <div class = "navbar">
+        <div class = "navbar-inner">
+        </div>
+      </div>
+      <div class="pages navbar-through toolbar-fixed">
+        <div class ="page" data-page="index">
+          <div class="page-content">
+            <img src="res\b3.jpg" style="position:absolute;width:100vw;"></img>
+            <img src="res\b3.png" id="logo" style="position:absolute;width:100vw;"></img>
+            <center>
+              <a href="#" class="open-login-screen" id="loginbutton">Open Login Screen</a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Login Starts                                                                  -->
+  <div class="login-screen">
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages">
+          <div class="page">
+            <div class="page-content">
+              <div class="login-screen-title">My App</div>
+              <form>
+                <div class="list-block">
+                  <ul>
+                    <li class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">Username</div>
+                        <div class="item-input">
+                          <input type="text" id="username" name="username" placeholder="Your username">
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title label">Password</div>
+                        <div class="item-input">
+                          <input type="password" id="password" name="password" placeholder="Your password">
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+              <div class="list-block">
+                <p id="LoginInfoText" style="color:red;text-align:center">&nbsp</p>
+
+                <div class="list-block-label">
+                  <center><button class="item-link list-button" onclick="signIn()" style="border:0px;">Sign In</button></center>
+                </div>
+              </div>
+              <br>
+              <span style="font-size:5vw;float:left;padding-left:15vw;">Don't have an account?</span>
+              <button class="button" style="border:0px;float:left;font-size:5vw;" onclick="signUpUser()">Sign up</button>
+              <br>
+              <br>
+              <br>
+              <center>
+                <p><a class="close-login-screen" style="float:bottom;">Close Login Screen</a></p>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="js/framework7.min.js"></script>
+  <script type="text/javascript" src="js/codea.js"></script>
+
+  <script type="text/javascript">
+    app.initialize();
+  </script>
+
+  <script>
+    document.addEventListener("deviceready", appReady, false);
+    function appReady(){
+      document.addEventListener("backbutton", function(e){
+        e.preventDefault();
+      });
+    }
+  </script>
+
+</body>
+</html>

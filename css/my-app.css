@@ -1,0 +1,64 @@
+div.profBack{
+  margin-top:0.5vh;
+  margin-left:2vw;
+  min-height:70vh;
+  width:95vw;
+  background-image:linear-gradient(to bottom right, #66ccff , #3366ff);
+  border-radius:1%;
+}
+
+div.connectButton{
+  margin-left:2vw;
+  width:95vw;
+  background-image:linear-gradient(to bottom right, #37a4da , #3366ff);
+  border-radius:2%;
+  color:white;
+  text-align:center;
+  line-height: 10vh;
+  font-size: 3vh;
+}
+
+#sendConnect{
+  margin-left:2vw;
+  width:95vw;
+  background-image:linear-gradient(to bottom right, #37a4da , #3366ff);
+  border-radius:2%;
+  color:white;
+  text-align:center;
+  line-height: 10vh;
+  font-size: 3vh;
+}
+
+div.offerl{
+  border-radius:1vw;
+  border-style:solid;
+  padding:1vw;
+  width:93vw;
+  margin-left:-2vw;
+  background-color:rgb(220, 220, 220);
+  border-width:0.1vw;
+}
+
+div.profBackM{
+  margin-top:0.5vh;
+  margin-left:2vw;
+  min-height:20vh;
+  width:95vw;
+  background-image:linear-gradient(to bottom right, #66ccff , #3366ff);
+  border-radius:1%;
+}
+
+div.profBackF{
+  margin-top:0.5vh;
+  margin-left:2vw;
+  min-height:20vh;
+  width:95vw;
+  background-image:linear-gradient(to bottom right, #8fc800 , #299a0b);
+  border-radius:1%;
+}
+
+img.profImage{
+  height:13vh;
+  margin-top:5vw;
+  clip-path: circle(50% at 50% 50%);
+}

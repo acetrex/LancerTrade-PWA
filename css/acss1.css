@@ -1,0 +1,26 @@
+#buttona{
+  display: block;
+}
+
+.open-login-screen{
+  background-color:#2196f3;color:#ffffff;border-radius: 50vw;
+  display: block;text-align:center;
+  padding-top:3vw;padding-right:10vw;padding-bottom:3vw;padding-left:10vw;z-index:5;
+}
+
+#loginbutton{
+   position: absolute;
+   top:120vw;
+   left:25vw;
+}
+
+
+.signUpInput
+{
+  font-size:6vw;
+  text-align:left;
+  vertical-align: top;
+  background-color:rgb(255,255,255,.20);
+  border:0px;
+  width:85vw;
+}
